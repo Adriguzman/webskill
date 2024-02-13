@@ -80,22 +80,22 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Registrate
+                               
                                     <!-- Modal trigger button -->
-                                    <a
+                                    <a class="nav-link" href="#"
                                         type="button"
-                                        class="btn btn-success btn-lg"
+                                        class="text-decoration-none"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#modalId"
+                                        data-bs-target="#modalregistro"
                                     >
-                                        Launch
-                                    </a>
+                                        Registrate
+                                </a>
                                     
                                     <!-- Modal Body -->
                                     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
                                     <div
                                         class="modal fade"
-                                        id="modalId"
+                                        id="modalregistro"
                                         tabindex="-1"
                                         data-bs-backdrop="static"
                                         data-bs-keyboard="false"
@@ -110,43 +110,98 @@
                                         >
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title text-center" id="modalTitleId">
+                                                    <h5 class="modal-title" id="modalTitleId">
                                                         Registro de Usuario
-                                                    </h5>
-                                                    <button
-                                                        type="button"
-                                                        class="btn-close"
-                                                        data-bs-dismiss="modal"
-                                                        aria-label="Close"
-                                                    ></button>
+                                                    </h5>                                                 
                                                 </div>
-                                                <div class="modal-body">Body</div>
-                                                <div class="modal-footer">
-                                                    <button
-                                                        type="button"
-                                                        class="btn btn-secondary"
-                                                        data-bs-dismiss="modal"
-                                                    >
-                                                        Close
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary">Save</button>
-                                                </div>
+                                                <form>
+                                                    <div class="form-group p-2">
+                                                      <label for="nombre">Usuario</label>
+                                                      <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                                    </div>
+                                                    <div class="form-group p-2">
+                                                      <label for="correo">Contraseña</label>
+                                                      <input type="email" class="form-control" id="correo" name="correo" required>
+                                                    </div>
+                                                    <div class="form-group p-2">
+                                                      <label for="telefono">Repite la contraseña</label>
+                                                      <input type="tel" class="form-control" id="" name="" required>
+                                                    </div>
+                                                    <div class="form-group p-2">
+                                                        <label for="telefono">Email</label>
+                                                        <input type="tel" class="form-control" id="" name="" required>
+                                                      </div>
+                                                      <div class="form-group p-2">
+                                                        <label for="telefono">Dirección</label>
+                                                        <input type="tel" class="form-control" id="" name="" required>
+                                                      </div>
+                                                      <div class="form-group p-2">
+                                                        <label for="telefono">Teléfono</label>
+                                                        <input type="tel" class="form-control" id="" name="" required>
+                                                      </div>
+                                                    <!-- Otros campos del formulario -->
+                                                    <button type="submit" class="bg-success text-white form-control">Entrar</button>
+                                                  </form>
                                             </div>
                                         </div>
                                     </div>
                                     
-                                    <!-- Optional: Place to the bottom of scripts -->
-                                    <script>
-                                        const myModal = new bootstrap.Modal(
-                                            document.getElementById("modalId"),
-                                            options,
-                                        );
-                                    </script>
                                     
-                                </a>
+                                         
+                                
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Inicia sesión</a>
+                                
+                                    <!-- Modal trigger button -->
+                                    <a class="nav-link" href="#"
+                                        type="button"
+                                        class="text-decoration-none"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modallogin"
+                                    >
+                                        Inicia sesión
+                                </a>
+                                    
+                                    <!-- Modal Body -->
+                                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                    <div
+                                        class="modal fade"
+                                        id="modallogin"
+                                        tabindex="-1"
+                                        data-bs-backdrop="static"
+                                        data-bs-keyboard="false"
+                                        
+                                        role="dialog"
+                                        aria-labelledby="modalTitleId"
+                                        aria-hidden="true"
+                                    >
+                                        <div
+                                            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                            role="document"
+                                        >
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalTitleId">
+                                                        INICIA SESIÓN
+                                                    </h5>
+                                                </div>
+                                                <form>
+                                                      <div class="form-group p-2">
+                                                        <label for="telefono">Usuario</label>
+                                                        <input type="tel" class="form-control" id="" name="" required>
+                                                      </div>
+                                                      <div class="form-group p-2">
+                                                        <label for="telefono">Contraseña</label>
+                                                        <input type="tel" class="form-control" id="" name="" required>
+                                                      </div>
+                                                    <!-- Otros campos del formulario -->
+                                                    <button type="submit" class="bg-success text-white form-control">Entrar</button>
+                                                  </form>
+                                                <div class="modal-footer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>     
                             </li>
                         </ul>
                     </div>
@@ -154,7 +209,7 @@
             </nav>
             
         </header>
-<<<<<<< HEAD
+
         <main class="container">
             <section>
                 <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
@@ -235,7 +290,6 @@
                 </div>
                 
             </section>
-=======
         <main>
             <section>
                 <div class="container">
@@ -282,9 +336,6 @@
                     </div>
                 </div>
             </section>
-          
-
->>>>>>> 1af441d83d8754b58b9e477db8ff063895bcbea5
         </main>
         <footer>
             <!-- place footer here -->
