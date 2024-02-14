@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>WEBSKILLS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-fondo">
+    <header class="pb-4">
+        <nav class="navbar navbar-expand-sm navbar-light bg-header">
+
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logos/logo.png" alt="" width="80"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html" aria-current="page">Inicio
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Selecciona Categoria</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Anfibios</a>
+                                <a class="dropdown-item" href="#">Aves</a>
+                                <a class="dropdown-item" href="#">Mamiferos</a>
+                                <a class="dropdown-item" href="#">Peces</a>
+                                <a class="dropdown-item" href="#">Reptiles</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+
+                            <!-- Modal trigger button -->
+                            <a class="nav-link" href="#" type="button" class="text-decoration-none"
+                                data-bs-toggle="modal" data-bs-target="#modalregistro">
+                                Registrate
+                            </a>
+
+                            <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                            <div class="modal fade" id="modalregistro" tabindex="-1" role="dialog"
+                                aria-labelledby="modalTitleId" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTitleId">
+                                                Registro de Usuario
+                                            </h5>
+                                        </div>
+                                        <form>
+                                            <div class="form-group p-2">
+                                                <label for="nombre">Usuario</label>
+                                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                                    required>
+                                            </div>
+                                            <div class="form-group p-2">
+                                                <label for="correo">Contraseña</label>
+                                                <input type="email" class="form-control" id="correo" name="correo"
+                                                    required>
+                                            </div>
+                                            <div class="form-group p-2">
+                                                <label for="telefono">Repite la contraseña</label>
+                                                <input type="tel" class="form-control" id="" name="" required>
+                                            </div>
+                                            <div class="form-group p-2">
+                                                <label for="telefono">Email</label>
+                                                <input type="tel" class="form-control" id="" name="" required>
+                                            </div>
+                                            <div class="form-group p-2">
+                                                <label for="telefono">Dirección</label>
+                                                <input type="tel" class="form-control" id="" name="" required>
+                                            </div>
+                                            <div class="form-group p-2">
+                                                <label for="telefono">Teléfono</label>
+                                                <input type="tel" class="form-control" id="" name="" required>
+                                            </div>
+                                            <!-- Otros campos del formulario -->
+                                            <button type="submit"
+                                                class="bg-success text-white form-control">Entrar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </li>
+                        <li class="nav-item">
+
+                            <!-- Modal trigger button -->
+                            <a class="nav-link" href="#" type="button" class="text-decoration-none"
+                                data-bs-toggle="modal" data-bs-target="#modallogin">
+                                Inicia sesión
+                            </a>
+
+                            <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                            <div class="modal fade" id="modallogin" tabindex="-1" role="dialog"
+                                aria-labelledby="modalTitleId" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTitleId">
+                                                INICIA SESIÓN
+                                            </h5>
+                                        </div>
+                                        <form>
+                                            <div class="form-group p-2">
+                                                <label for="telefono">Usuario</label>
+                                                <input type="tel" class="form-control" id="" name="" required>
+                                            </div>
+                                            <div class="form-group p-2">
+                                                <label for="telefono">Contraseña</label>
+                                                <input type="tel" class="form-control" id="" name="" required>
+                                            </div>
+                                            <!-- Otros campos del formulario -->
+                                            <button type="submit"
+                                                class="bg-success text-white form-control">Entrar</button>
+                                        </form>
+                                        <div class="modal-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container text-center">
+            <h1>Catálogo de animales</h1>
+            <h2 class="text-dark">Reptiles. Encontrados: 4</h2><hr>
+        </div>
+        <div class="col-lg-10 row mt-5 bg-white m-auto flex flex-nowrap overflow-auto">
+            <div class="col-lg-2 col-md-4 col-6">
+                <img class="img-fluid" src="/animales/reptiles/culebra.jpg" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>culebra</h3>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img class="img-fluid" src="/animales/reptiles/galapago.jpg" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>galapago</h3>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4  col-6">
+                <img class="img-fluid" src="/animales/reptiles/lagartija.jpg" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>lagartija</h3>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img class="img-fluid" src="/animales/reptiles/lagarto.JPG" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>lagarto</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 m-auto text-center py-5">
+           <hr> <h1>Culebra bastarda</h1> <hr>
+        </div>
+        <div class="col-lg-10 row mt-4 m-auto">
+            <div class="col-lg-5 pt-5 bg-header">
+                <h2>Taxonomía</h2>
+                <div class="col ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Reino:</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Animalia</h5>
+                    </div>
+                </div>
+                <div class="col bg-main ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Filo:</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Chorlata</h5>
+                    </div>
+                </div>
+                <div class="col ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Clase</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Sauropsida</h5>
+                    </div>
+                </div>
+                <div class="col bg-main ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Orden</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Squamata</h5>
+                    </div>
+                </div>
+                <div class="col ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Familia</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Colubridae</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-header">
+                <div class="col pt-5">
+                    <h1>Malpolon monspessulanus</h1>
+                </div>
+                <div class="col mt-3">La culebra bastarda o de Montpellier (Malpolon monspessulanus) es una especie de reptil
+                    escamoso de
+                    la familia Colubridae. Es una serpiente venenosa opistoglifa (con los dientes inoculadores de veneno
+                    situados en la parte posterior de la boca) que no es peligrosa para el hombre.
+                </div>
+                <div class="col mt-3">
+                    <h1>Características</h1>
+                </div>
+                <div class="col mt-3">
+                    Los ejemplares macho adultos pueden llegar a superar con facilidad los 2 m de longitud total; son
+                    frecuentemente menores, aunque individuos muy excepcionales pueden alcanzar hasta 2,55 m, siendo,
+                    por tanto, la mayor especie de la península ibérica y del resto de Europa. Posee dientes venenosos
+                    en la parte posterior del maxilar superior (opistoglifa).
+                </div>
+                <div class="col mt-3">La cabeza presenta un aspecto muy característico, pues posee ojos grandes, con las escamas supraoculares muy salientes que forman una especie de ceja muy prominente que le da una expresión de mirada penetrante. La escama frontal es característicamente estrecha. Posee ocho escamas supralabiales de las que la 4.ª y la 2.ª están bordeando el ojo. Las escamas del dorso son lisas y con arcos, pero nunca carenadas, formando 17 o 19 hileras en el centro del cuerpo: de 160 a 189 escamas ventrales. La cola representa aproximadamente 1/4 de la longitud total. Presenta un dorso oliváceo o pardusco claro generalmente uniforme, mostrando en el tercio anterior una zona de manchas negruzcas (en los machos y de vez en cuando hembras) muy características (mancha de silla de montar), y las partes inferiores amarillentas con un ligero moteado oscuro. Los jóvenes presentan 5 o 7 hileras de manchas oscuras a lo largo del cuerpo, siendo más grandes las centrodorsales que las de los flancos.</div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
