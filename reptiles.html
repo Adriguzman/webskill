@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Inicio
+                            <a class="nav-link active" href="/index.html" aria-current="page">Inicio
                                 <span class="visually-hidden">(current)</span></a>
                         </li>
 
@@ -39,7 +39,7 @@
                                 <a class="dropdown-item" href="#">Aves</a>
                                 <a class="dropdown-item" href="#">Mamiferos</a>
                                 <a class="dropdown-item" href="#">Peces</a>
-                                <a class="dropdown-item" href="/reptiles.html">Reptiles</a>
+                                <a class="dropdown-item" href="#">Reptiles</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -52,15 +52,15 @@
 
                             <!-- Modal Body -->
                             <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                            <div class="modal fade" id="modalregistro" tabindex="-1"  role="dialog" aria-labelledby="modalTitleId"
-                                aria-hidden="true">
+                            <div class="modal fade" id="modalregistro" tabindex="-1" role="dialog"
+                                aria-labelledby="modalTitleId" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
                                     role="document">
                                     <div class="modal-content">
-                                        <div class="text-center"> 
-                                                <h5 class="modal-title text-center m-2" id="modalTitleId">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTitleId">
                                                 Registro de Usuario
-                                                </h5>
+                                            </h5>
                                         </div>
                                         <form>
                                             <div class="form-group p-2">
@@ -90,11 +90,8 @@
                                                 <input type="tel" class="form-control" id="" name="" required>
                                             </div>
                                             <!-- Otros campos del formulario -->
-                                            <div class="form-group p-2">
-                                                <button type="submit"
-                                                class="bg-success text-white form-control">Entrar
-                                                </button>
-                                            </div>
+                                            <button type="submit"
+                                                class="bg-success text-white form-control">Entrar</button>
                                         </form>
                                     </div>
                                 </div>
@@ -114,12 +111,12 @@
 
                             <!-- Modal Body -->
                             <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                            <div class="modal fade" id="modallogin" tabindex="-1"  role="dialog" aria-labelledby="modalTitleId"
-                                aria-hidden="true">
+                            <div class="modal fade" id="modallogin" tabindex="-1" role="dialog"
+                                aria-labelledby="modalTitleId" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
                                     role="document">
                                     <div class="modal-content">
-                                        <div class="text-center m-2">
+                                        <div class="modal-header">
                                             <h5 class="modal-title" id="modalTitleId">
                                                 INICIA SESIÓN
                                             </h5>
@@ -134,11 +131,8 @@
                                                 <input type="tel" class="form-control" id="" name="" required>
                                             </div>
                                             <!-- Otros campos del formulario -->
-                                            <div class="form-group p-2">
-                                                <button type="submit"
-                                                class="bg-success text-white form-control">Entrar
-                                                </button>
-                                            </div>
+                                            <button type="submit"
+                                                class="bg-success text-white form-control">Entrar</button>
                                         </form>
                                         <div class="modal-footer">
                                         </div>
@@ -152,100 +146,114 @@
         </nav>
 
     </header>
-
-    <main class="container">
-        <section>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
-                        aria-label="First slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="carrusel/anfibios1.png" class="w-100 d-block" alt="First slide" />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="carrusel/aves1.png" class="w-100 d-block" alt="Second slide" />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="carrusel/mamiferos1.png" class="w-100 d-block" alt="Third slide" />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="carrusel/peces1.png" class="w-100 d-block" alt="Third slide" />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="carrusel/reptiles1.png" class="w-100 d-block" alt="Third slide" />
-                    </div>
+    <main>
+        <div class="container text-center">
+            <h1>Catálogo de animales</h1>
+            <h2 class="text-dark">Reptiles. Encontrados: 4</h2><hr>
+        </div>
+        <div class="col-lg-10 row mt-5 bg-white m-auto flex flex-nowrap overflow-auto">
+            <div class="col-lg-2 col-md-4 col-6">
+                <img class="img-fluid" src="/animales/reptiles/culebra.jpg" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>culebra</h3>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
-        </section>
-        <h1 class="text-center">Catálogo de animales</h1>
-        <h2 class="text-center">Los otros animales de la tierra</h2>
-        <main>
-            <section>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 mt-5">
-                            <img class="rounded-circle card-img img-fluid" src="categorias/anfibios.jpeg" alt="Title">
-                            <h4 class="text-center bg-success text-white mt-2">Anfibios</h4>
-
-                        </div>
-
-                    
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 mt-5">
-                        <img class="rounded-circle card-img img-fluid" src="categorias/aves.jpeg" alt="Title">
-                        <h4 class="text-center bg-success text-white mt-2">Aves</h4>
-
-                        </div>
-
-                
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 mt-5 ">
-                        <img class="rounded-circle card-img img-fluid" src="categorias/maniferos.jpeg" alt="Title">
-                        <h4 class="text-center bg-success text-white mt-2">Mamíferos</h4>
-
-                        </div>
-
-                
-
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 mt-5 ">
-                        <img class="rounded-circle card-img img-fluid" src="categorias/peces.jpeg" alt="Title">
-                        <h4 class="text-center bg-success text-white mt-2">Peces</h4>
-
-                        </div>
-
-                
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 mt-5 ">
-                        <img class="rounded-circle card-img img-fluid" src="categorias/reptiles.jpeg" alt="Title">
-                        <h4 class="text-center bg-success text-white mt-2">Reptiles</h4>
-                        </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img class="img-fluid" src="/animales/reptiles/galapago.jpg" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>galapago</h3>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4  col-6">
+                <img class="img-fluid" src="/animales/reptiles/lagartija.jpg" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>lagartija</h3>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img class="img-fluid" src="/animales/reptiles/lagarto.JPG" alt="" width="100%">
+                <div class="bg-success text-white text-center">
+                    <h3>lagarto</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 m-auto text-center py-5">
+           <hr> <h1>Culebra bastarda</h1> <hr>
+        </div>
+        <div class="col-lg-10 row mt-4 m-auto">
+            <div class="col-lg-5 pt-5 bg-header">
+                <h2>Taxonomía</h2>
+                <div class="col ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Reino:</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Animalia</h5>
                     </div>
                 </div>
-            </section>
-            <h1 class="text-center mt-5">CLM SKILLS WEB -2021</h1>
-        </main>
-        <footer>
-        
+                <div class="col bg-main ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Filo:</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Chorlata</h5>
+                    </div>
+                </div>
+                <div class="col ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Clase</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Sauropsida</h5>
+                    </div>
+                </div>
+                <div class="col bg-main ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Orden</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Squamata</h5>
+                    </div>
+                </div>
+                <div class="col ps-3 py-3 row">
+                    <div class="col">
+                        <h5 class="text-body">Familia</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-body">Colubridae</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-header">
+                <div class="col pt-5">
+                    <h1>Malpolon monspessulanus</h1>
+                </div>
+                <div class="col mt-3">La culebra bastarda o de Montpellier (Malpolon monspessulanus) es una especie de reptil
+                    escamoso de
+                    la familia Colubridae. Es una serpiente venenosa opistoglifa (con los dientes inoculadores de veneno
+                    situados en la parte posterior de la boca) que no es peligrosa para el hombre.
+                </div>
+                <div class="col mt-3">
+                    <h1>Características</h1>
+                </div>
+                <div class="col mt-3">
+                    Los ejemplares macho adultos pueden llegar a superar con facilidad los 2 m de longitud total; son
+                    frecuentemente menores, aunque individuos muy excepcionales pueden alcanzar hasta 2,55 m, siendo,
+                    por tanto, la mayor especie de la península ibérica y del resto de Europa. Posee dientes venenosos
+                    en la parte posterior del maxilar superior (opistoglifa).
+                </div>
+                <div class="col mt-3">La cabeza presenta un aspecto muy característico, pues posee ojos grandes, con las escamas supraoculares muy salientes que forman una especie de ceja muy prominente que le da una expresión de mirada penetrante. La escama frontal es característicamente estrecha. Posee ocho escamas supralabiales de las que la 4.ª y la 2.ª están bordeando el ojo. Las escamas del dorso son lisas y con arcos, pero nunca carenadas, formando 17 o 19 hileras en el centro del cuerpo: de 160 a 189 escamas ventrales. La cola representa aproximadamente 1/4 de la longitud total. Presenta un dorso oliváceo o pardusco claro generalmente uniforme, mostrando en el tercio anterior una zona de manchas negruzcas (en los machos y de vez en cuando hembras) muy características (mancha de silla de montar), y las partes inferiores amarillentas con un ligero moteado oscuro. Los jóvenes presentan 5 o 7 hileras de manchas oscuras a lo largo del cuerpo, siendo más grandes las centrodorsales que las de los flancos.</div>
 
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
