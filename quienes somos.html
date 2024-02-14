@@ -13,89 +13,192 @@
 </head>
 
 <body>
-    <header>
-        <header class="pb-4">
-            <nav class="navbar navbar-expand-sm navbar-light bg-header">
-
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="logos/logo.png" alt="" width="80"></a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" aria-current="page">Inicio
-                                    <span class="visually-hidden">(current)</span></a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Selecciona Categoria</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">Anfibios</a>
-                                    <a class="dropdown-item" href="#">Aves</a>
-                                    <a class="dropdown-item" href="#">Mamiferos</a>
-                                    <a class="dropdown-item" href="#">Peces</a>
-                                    <a class="dropdown-item" href="#">Reptiles</a>
+    <header class="pb-4">
+        <nav
+            class="navbar navbar-expand-sm navbar-light bg-header">
+        
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logos/logo.png" alt="" width="80"></a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page"
+                                >Inicio
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Selecciona Categoria</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    >Anfibios</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Aves</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Mamiferos</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Peces</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Reptiles</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                           
+                                <!-- Modal trigger button -->
+                                <a class="nav-link" href="#"
+                                    type="button"
+                                    class="text-decoration-none"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalregistro"
+                                >
+                                    Registrate
+                            </a>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div
+                                    class="modal fade"
+                                    id="modalregistro"
+                                    tabindex="-1"
+                                    data-bs-backdrop="static"
+                                    data-bs-keyboard="false"
+                                    
+                                    role="dialog"
+                                    aria-labelledby="modalTitleId"
+                                    aria-hidden="true"
+                                >
+                                    <div
+                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                        role="document"
+                                    >
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitleId">
+                                                    Registro de Usuario
+                                                </h5>                                                 
+                                            </div>
+                                            <form>
+                                                <div class="form-group p-2">
+                                                  <label for="nombre">Usuario</label>
+                                                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                                </div>
+                                                <div class="form-group p-2">
+                                                  <label for="correo">Contraseña</label>
+                                                  <input type="email" class="form-control" id="correo" name="correo" required>
+                                                </div>
+                                                <div class="form-group p-2">
+                                                  <label for="telefono">Repite la contraseña</label>
+                                                  <input type="tel" class="form-control" id="" name="" required>
+                                                </div>
+                                                <div class="form-group p-2">
+                                                    <label for="telefono">Email</label>
+                                                    <input type="tel" class="form-control" id="" name="" required>
+                                                  </div>
+                                                  <div class="form-group p-2">
+                                                    <label for="telefono">Dirección</label>
+                                                    <input type="tel" class="form-control" id="" name="" required>
+                                                  </div>
+                                                  <div class="form-group p-2">
+                                                    <label for="telefono">Teléfono</label>
+                                                    <input type="tel" class="form-control" id="" name="" required>
+                                                  </div>
+                                                <!-- Otros campos del formulario -->
+                                                <button type="submit" class="bg-success text-white form-control">Entrar</button>
+                                              </form>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Registrate
-                                    <!-- Modal trigger button -->
-                                    <a type="button" class="btn btn-success btn-lg" data-bs-toggle="modal"
-                                        data-bs-target="#modalId">
-                                        Launch
-                                    </a>
-
-                                    <!-- Modal Body -->
-                                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                                    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
-                                        data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
-                                        aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                                            role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title text-center" id="modalTitleId">
-                                                        Registro de Usuario
-                                                    </h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">Body</div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">
-                                                        Close
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary">Save</button>
-                                                </div>
+                                
+                                
+                                     
+                            
+                        </li>
+                        <li class="nav-item">
+                            
+                                <!-- Modal trigger button -->
+                                <a class="nav-link" href="#"
+                                    type="button"
+                                    class="text-decoration-none"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modallogin"
+                                >
+                                    Inicia sesión
+                            </a>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div
+                                    class="modal fade"
+                                    id="modallogin"
+                                    tabindex="-1"
+                                    data-bs-backdrop="static"
+                                    data-bs-keyboard="false"
+                                    
+                                    role="dialog"
+                                    aria-labelledby="modalTitleId"
+                                    aria-hidden="true"
+                                >
+                                    <div
+                                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                        role="document"
+                                    >
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitleId">
+                                                    INICIA SESIÓN
+                                                </h5>
+                                            </div>
+                                            <form>
+                                                  <div class="form-group p-2">
+                                                    <label for="telefono">Usuario</label>
+                                                    <input type="tel" class="form-control" id="" name="" required>
+                                                  </div>
+                                                  <div class="form-group p-2">
+                                                    <label for="telefono">Contraseña</label>
+                                                    <input type="tel" class="form-control" id="" name="" required>
+                                                  </div>
+                                                <!-- Otros campos del formulario -->
+                                                <button type="submit" class="bg-success text-white form-control">Entrar</button>
+                                              </form>
+                                            <div class="modal-footer">
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Optional: Place to the bottom of scripts -->
-                                    <script>
-                                        const myModal = new bootstrap.Modal(
-                                            document.getElementById("modalId"),
-                                            options,
-                                        );
-                                    </script>
-
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Inicia sesión</a>
-                            </li>
-                        </ul>
-                    </div>
+                                </div>     
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-
-        </header>
+            </div>
+        </nav>
+        
     </header>
     <main>
         <div class="container">
@@ -114,9 +217,9 @@
                     </div>
                     <div class="col mt-4">
                         <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
+                            <div class="accordion-item  ">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                    <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
                                         aria-expanded="true" aria-controls="collapseOne">
                                         <h5 class="text-primary">¿Qué queremos hacer?</h5>
                                     </button>
@@ -139,7 +242,7 @@
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                    <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
                                         aria-expanded="true" aria-controls="collapseOne">
                                         <h5 class="text-primary">Nuestro propósito</h5>
                                     </button>
@@ -159,7 +262,7 @@
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                                    <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
                                         aria-expanded="true" aria-controls="collapseOne">
                                         <h5 class="text-primary">¿Qué hacemos en nuestra web?</h5>
                                     </button>
